@@ -86,6 +86,13 @@ ALTER USER '名字'@'从机ip' IDENTIFIED WITH mysql_native_password BY '密码'
 ```
 
 
+### 关于io报错
+```python
+Fatal error: The slave I/O thread stops because master and slave have equal MySQL server UUIDs; these UUIDs must be different for replication to work.
+删除 /var/lib/mysql/auto.cnf 
+重启mysql即可
+```
+
 
 ## Django读写分离配置
 
